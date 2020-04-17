@@ -1,12 +1,12 @@
-#302 Group Project 
+# 302 Group Project 
 Logistic Management System For SAGAWA
 
 `npm install` : Install Modules
 `node app.js` : Start System
 `py app.py`   : Start Admin System
 
-# Node js application - Front-end ordering system
-# Python-Flask Web application - Back-end admin system
+*Node js application - Front-end ordering system
+*Python-Flask Web application - Back-end admin system
 
 Author: Azrael Ho
 
