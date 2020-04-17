@@ -1,6 +1,13 @@
 # 302 Group Project 
 Logistic Management System For SAGAWA
 
+Group member: 
+Ho Kin Wai, 
+Chan Sing Ping,  
+Cheng Ho Yan Joseph,  
+Lam Ho Tim,
+Lin Chi Yeung
+
 `npm install` : Install Modules
 `node app.js` : Start System
 `py app.py`   : Start Admin System
