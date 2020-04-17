@@ -8,12 +8,12 @@ Ho Kin Wai,
 Lam Ho Tim, 
 Lin Chi Yeung
 
-`npm install` : Install Modules
-`node app.js` : Start System
-`py app.py`   : Start Admin System
+`npm install` : Install Modules   
+`node app.js` : Start System   
+`py app.py`   : Start Admin System   
 
-*Node js application - Front-end ordering system
-*Python-Flask Web application - Back-end admin system
+*Node js application - Front-end ordering system   
+*Python-Flask Web application - Back-end admin system   
 
 Author: Azrael Ho
 
