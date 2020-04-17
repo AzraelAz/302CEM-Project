@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+        <a class="navbar-brand" href="{{ url_for('index')}}">Logistic Internal System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+        <!--Menu bar-->
+        <div class="collaspe navbar-collaspe" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('orders')}}">Order State</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('log')}}">Update Order</a>
+                </li>
+                <!--Menu bar Ends-->
+            </ul>
+    </nav>
+
+</head>
+
+<body>
+    <h1 style="color:blue;">Change Delivery Information</h1>
+</body>
+
+<body>
+    <div class="col-sm-5">
+        <form action="/log" method="POST">
+            <div class="form-group">
+                <label for="order_number">Find Order number:</label>
+                <input type="text" class="form-control" id="find_order_number" name="find_order_number" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-control">Send</button>
+            </div>
+</body>
+
+<body>
+    <div class="container">
+
+        <div class='row'>
+            <div class='col-4'>
+                <form name="deli_info" action="/log" method="POST">
+
+                    <p>Old order infomation
+                        <p>
+                            <div>
+                                <label>Order number :</label>
+                                <label>{{orderNo}}</label>
+                            </div>
+                            <div>
+                                <label>Sender First Name :</label>
+                                <label>{{S_FirstName}}</label>
+                            </div>
+                            <div>
+                                <label>Sender Last Name :</label>
+                                <label>{{S_LastName}}</label>
+                            </div>
+                            <div>
+                                <label>Sender Address :</label>
+                                <label>{{S_Address}}</label>
+                            </div>
+                            <div>
+                                <label>Sender City :</label>
+                                <label>{{S_City}}</label>
+                            </div>
+                            <div>
+                                <label>Sender Country :</label>
+                                <label>{{S_Country}}</label>
+                            </div>
+                            <div>
+                                <label>Receiver First Name :</label>
+                                <label>{{R_FirstName}} </label>
+                            </div>
+                            <div>
+                                <label>Receiver Last Name :</label>
+                                <label>{{R_LastName}}</label>
+                            </div>
+                            <div>
+                                <label>Receiver Address :</label>
+                                <label>{{R_Address}}</label>
+                            </div>
+                            <div>
+                                <label>Receiver City :</label>
+                                <label>{{R_City}}</label>
+                            </div>
+                            <div>
+                                <label>Receiver Country :</label>
+                                <label>{{R_Country}}</label>
+                            </div>
+                            <div>
+                                <label>Product Type :</label>
+                                <label>{{ProductName}}</label>
+                            </div>
+                            <div>
+                                <label>Order Quantity :</label>
+                                <label>{{OrderQun}}</label>
+                            </div>
+                </form>
+            </div>
+
+
+            <div class='col-8'>
+                <form name="deli_new_info" action="/update" method="POST">
+                    <p>Please input the new order infomation
+                        <p>
+                            <div>
+                                <label>New Order number :</label>
+                                <input type="text" name="P_orderNo" value={{orderNo}} readonly>
+                                <br>
+                                <label>New Sender First Name :</label>
+                                <input type="text" name="N_S_firstName" required>
+                                <br>
+                                <label>New Sender Last Name :</label>
+                                <input type="text" name="N_S_lastName" required>
+
+                                <label>New Sender Address :</label>
+                                <input type="text" name="N_S_address" required>
+                            </div>
+                            <div>
+                                <label>New Sender City :</label>
+                                <input type="text" name="N_S_city" required>
+                            </div>
+                            <div>
+                                <label>New Sender Country :</label>
+                                <input type="text" name="N_S_country" required>
+                            </div>
+                            <div>
+                                <label>New Receiver First Name :</label>
+                                <input type="text" name="N_R_firstName" required>
+                            </div>
+                            <div>
+                                <label>New Receiver Last Name :</label>
+                                <input type="text" name="N_R_lastName" required>
+                            </div>
+                            <div>
+                                <label>New Receiver Address :</label>
+                                <input type="text" name="N_R_address" required>
+                            </div>
+                            <div>
+                                <label>New Receiver City :</label>
+                                <input type="text" name="N_R_city" required>
+                            </div>
+                            <div>
+                                <label>New Receiver Country :</label>
+                                <input type="text" name="N_R_country" required>
+                            </div>
+                            <div>
+                                <label>New Product Type :</label>
+                                <input type="text" name="N_productname" required>
+                            </div>
+                            <div>
+                                <label>New Order Quantity :</label>
+                                <input type="text" name="N_orderqun" required>
+                            </div>
+                            <input type="submit" name="update">
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<div class="footnote">
+    <div>
+        <p align="center">&copy; ALL RIGHTS RESERVED | Log @ 2019</p>
+    </div>
+</div>
+
+</html>

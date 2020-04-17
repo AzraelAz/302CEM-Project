@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+        <a class="navbar-brand" href="{{ url_for('index')}}">Logistic Internal System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+        <!--Menu bar-->
+        <div class="collaspe navbar-collaspe" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('orders')}}">Order State</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('log')}}">Update Order</a>
+                </li>
+                <!--Menu bar Ends-->
+            </ul>
+</nav>
+<h2>Order State</h2>
+
+<div class="col-sm-5">
+	<form action="/orders" method="POST">
+		<div class="form-group">
+			<label for="order_number">Order number: (required)</label>
+			<input type="text" class="form-control" id="order_number" name="order_number" required>
+			</div>
+		<div class="form-group">
+			<button type="submit" class="form-control">Send</button>
+		</div>
+	</form>
+</div>
+<div id="display">
+	
+	<div id="Description">
+		<h2>Details</h2>
+		<table id="descriptionTable">
+			<tl>
+				<td>Order Number : </td>
+				<td>{{data1}}</td>
+			</tr>
+			<tr>
+				<td>Sender First Name : </td>
+				<td>{{data2}}</td>
+			</tr>
+			<tr>
+				<td>Sender Last Name : </td>
+				<td>{{data3}}</td>
+			</tr>
+			<tr>
+				<td>Sender Address : </td>
+				<td>{{data4}}</td>
+			</tr>
+			<tr>
+				<td>Sender City : </td>
+				<td>{{data5}}</td>
+			</tr>
+			<tr>
+				<td>Sender Country : </td>
+				<td>{{data6}}</td>
+			</tr>
+			<tr>
+				<td>Receiver First Name : </td>
+				<td>{{data7}}</td>
+			</tr>
+			<tr>
+				<td>Receiver Last Name : </td>
+				<td>{{data8}}</td>
+			</tr>
+			<tr>
+				<td>Receiver Address : </td>
+				<td>{{data9}}</td>
+			</tr>
+			<tr>
+				<td>Receiver City : </td>
+				<td>{{data10}}</td>
+			</tr>
+			<tr>
+				<td>Receiver Country : </td>
+				<td>{{data11}}</td>
+			</tr>
+			<tr>
+				<td>Products Name : </td>
+				<td>{{data12}}</td>
+			</tr>
+			<tr>
+				<td>Quantity : </td>
+				<td>{{data13}}</td>
+			</tr>
+		</table>
+		
+	</div>
+	<div>
+	<button type="button" onclick="alert('The label is printing. Please Wait')">Print</button>
+	</div>
+</div>
+
+<div class="footnote">
+	<div>
+		<p align="center">&copy; ALL RIGHTS RESERVED | Log @ 2019</p>
+	</div>
+</div>	
+</body>
+</html>

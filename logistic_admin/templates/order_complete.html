@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	
+	<a class="navbar-brand" href="{{ url_for('index')}}">Log</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!--Menu bar-->
+	<div class="collaspe navbar-collaspe" id="collapsibleNavbar">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="{{ url_for('index')}}">Home</a>
+		</li>
+		<!--Order Dropdown-->
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Account</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item"  href="{{ url_for('login')}}">Login</a>
+			</div>
+		</li>
+
+		<!--Order Dropdown Ends-->
+		<!--Menu bar Ends-->
+	</ul>
+</nav>
+
+</head>
+		<body>
+			<h1>The orderlist will be shown below</h1>
+			<main>
+				<header>orderdate : </header><header>{{orderdate}}</header>
+				<header>{{data1}}</header>
+				<header>{{data2}}</header>
+        		<header>{{productName}}</header>
+				<header>{{quantity}}</header>
+				<header>{{address}}</header>
+				<header>{{city}}</header>
+				<header>{{country}}</header>
+				<header>{{zip}}</header>
+			</main>
+    	</body>
+
+<div class="footnote">
+	<div>
+		<p align="center">&copy; ALL RIGHTS RESERVED | Log @ 2019</p>
+	</div>
+</div>	
+
+</html>

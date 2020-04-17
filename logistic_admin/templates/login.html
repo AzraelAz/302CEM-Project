@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+        <a class="navbar-brand" href="{{ url_for('index')}}">Logistic Internal System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+        <!--Menu bar-->
+        <div class="collaspe navbar-collaspe" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('orders')}}">Order State</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('log')}}">Update Order</a>
+                </li>
+                <!--Menu bar Ends-->
+            </ul>
+    </nav>
+    </div>
+</body>
+
+<body>
+
+    <h2>SAGAWA Login</h2>
+
+    <div class="col-sm-5">
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="userid">User ID: (required) </label>
+                <input type="text" class="form-control" id="userid" name="userid" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password: (required)</label>
+                <input type="text" class="form-control" id="pwd" name="pwd" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-control">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footnote">
+        <div>
+            <p align="center">&copy; ALL RIGHTS RESERVED | Log @ 2019</p>
+        </div>
+    </div>
+</body>
+
+</html>
