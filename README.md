@@ -2,9 +2,9 @@
 Logistic Management System For SAGAWA
 
 Group member: 
-Ho Kin Wai, 
 Chan Sing Ping,  
-Cheng Ho Yan Joseph,  
+Cheng Ho Yan Joseph, 
+Ho Kin Wai, 
 Lam Ho Tim,
 Lin Chi Yeung
 
