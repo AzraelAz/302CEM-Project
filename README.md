@@ -20,7 +20,7 @@ Author: Azrael Ho
 | Tools              | Version      | Description                       |
 | ------------------ | ------------ | --------------------------------- |
 | Python             | 3.7 or Above | Program environment               |
-| mysql              | 2.18.1       | sql environment                   |
+| mysql              | 2.18.1       | Sql environment                   |
 | Node.js            | v13.12.0     | JS environment                    |
 | npm                | 6.14.4       | Node Package Manager              |
 | express            | 6.14.4       | Node.Js Web Application Framework |
