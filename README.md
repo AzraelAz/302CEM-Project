@@ -19,12 +19,13 @@ Author: Azrael Ho
 
 | Tools              | Version      | Description                       |
 | ------------------ | ------------ | --------------------------------- |
-| Python             | 3.7 or Above | Program environment               |
-| mysql              | 2.18.1       | Sql environment                   |
-| Node.js            | v13.12.0     | JS environment                    |
+| Python             | 3.7 or Above | Program Environment               |
+| Flask              | 1.0.2        | Python Web Application Framework  |
+| mysql              | 2.18.1       | Sql Environment                   |
+| Node.js            | v13.12.0     | JS Environment                    |
 | npm                | 6.14.4       | Node Package Manager              |
 | express            | 6.14.4       | Node.Js Web Application Framework |
 | morgan             | 6.14.4       | Node.js Logger Middleware         |
 | nodemon            | 2.0.3        | Node.js Monitor                   |
-| body-parser        | 1.19.0       | Node.js body parsing middleware   |
+| body-parser        | 1.19.0       | Node.js Body Parsing Middleware   |
 | webpack-dev-server | 3.10.3       | Node.js API                       |
