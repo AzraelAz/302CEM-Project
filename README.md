@@ -1,11 +1,11 @@
 # 302 Group Project 
 Logistic Management System For SAGAWA
 
-Group member: 
-Chan Sing Ping,  
+Group member: //
+Chan Sing Ping, 
 Cheng Ho Yan Joseph, 
 Ho Kin Wai, 
-Lam Ho Tim,
+Lam Ho Tim, 
 Lin Chi Yeung
 
 `npm install` : Install Modules
